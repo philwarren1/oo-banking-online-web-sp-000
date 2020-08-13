@@ -9,6 +9,5 @@ class BankAccount
         @@all << self
         @balance = 1000
         @status = "open"
-        name.dub.freeze
   end
 end
