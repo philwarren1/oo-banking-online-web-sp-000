@@ -7,5 +7,6 @@ class BankAccount
   def initialize(name)
         @name = name
         @@all << self
+        @balance = 1000
   end
 end
