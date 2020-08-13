@@ -1,6 +1,6 @@
 class BankAccount 
  
- def initialize
-   BankAccount
+ def self.initialize
+   @self
  end
 end
