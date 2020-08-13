@@ -11,7 +11,7 @@ class BankAccount
         @status = "open"
   end
   
-  def deposit(Integer)
+  def deposit
     @balance << Integer
   end
 end
