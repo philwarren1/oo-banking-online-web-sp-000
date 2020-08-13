@@ -1,20 +1,17 @@
-class BankAccount 
- 
-  @@all = []
+class BankAccount
+  attr_accessor :balance, :status
+  attr_reader :name
 
-  attr_accessor :name, :balance, :status
+  def initialize(account_name)
+    @name = account_name
+    @balance = 1000
+    @status = "open"
+  end
 
-  def initialize(name)
-        @name = name
-        @@all << self
-        @balance = 1000
-        @status = "open"
+  def deposit(money)
+    @balance += money
   end
-  
-  def deposit(amount)
-    @balance += amount
-  end
-  
+
   def display_balance
     "Your balance is $#{@balance}."
   end
