@@ -12,6 +12,6 @@ class BankAccount
   end
   
   def deposit(Integer)
-    @balance << money
+    @balance << Integer
   end
 end
