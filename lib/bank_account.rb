@@ -12,7 +12,8 @@ class BankAccount
   end
   
   def deposit(i)
-    i = 1000 
+    i = 0 
+    i += 1
     @balance << i
   end
 end
